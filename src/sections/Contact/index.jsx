@@ -3,7 +3,7 @@ import { Card } from "../../components/Card";
 
 export const Contact = () => {
   return (
-    <Card>
+    <Card title='Contact with me'>
       <Container>
         <div>
           <Input width="50%">
