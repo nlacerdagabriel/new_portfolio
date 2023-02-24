@@ -22,12 +22,14 @@ export const GlobalStyle = createGlobalStyle`
         -webkit-font-smoothing: antialiased;
         
         background-position: center;
+        background-color: ${theme.colors.secondary};
+
+        color: ${theme.colors.text};
+        font-family: 'Montserrat', sans-serif;
 
     }
 
-    body::-webkit-scrollbar {
-        display: none;
-    }
+
     
     body, input, textarea, button{
         font-weight: 400;
