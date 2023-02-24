@@ -10,6 +10,7 @@ export const theme = {
   style: {
     box_shadow: "10px 10px 19px #1c1e22, -10px -10px 19px #262a2e",
     border_radius: "0.7rem",
+    inner_shadow: '1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset'
   },
   size: {
     fonts: {
@@ -44,7 +45,7 @@ export const theme = {
       },
     },
     container: {
-      xl: "1260px",
+      xl: "1400px",
     },
   },
 };
