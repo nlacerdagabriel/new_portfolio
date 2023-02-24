@@ -5,12 +5,9 @@ export const Container = styled.form`
   input,
   textarea {
     width: 100%;
-    border-radius:0.5rem;
+    border-radius: 0.5rem;
     background-color: #191b1e;
     outline: none;
-
-    margin-bottom: 1.5rem;
-
 
     border: none;
 
@@ -29,14 +26,6 @@ export const Container = styled.form`
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    input {
-      width: 50%;
-
-      &:first-child {
-        margin-right: 2rem;
-      }
-    }
   }
 
   textarea {
@@ -52,7 +41,41 @@ export const Container = styled.form`
 
     box-shadow: ${theme.style.box_shadow};
 
-    height: 2.5rem;
+    height: 4rem;
+    width: 100%;
+    background-image: linear-gradient(145deg, #1e2024, #23272b);
+
+
+    text-transform: uppercase;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: ${theme.size.fonts.body.s.size};
+    color: ${theme.colors.white};
+    font-weight: 500;
+  }
+`;
+
+export const Input = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  width: ${(props) => (props.width ? props.width : "100%")};
+
+    margin-bottom: 1.5rem;
+
+  &:first-child {
+      margin-right: 2rem;
+    }
+
+    & > label{
+      margin-bottom: 1rem;
+      width: 100%;
+    }
+
+  & > input {
     width: 100%;
   }
 `;

@@ -1,4 +1,4 @@
-import { Container } from "./styles";
+import { Container, Input } from "./styles";
 import { Card } from "../../components/Card";
 
 export const Contact = () => {
@@ -6,15 +6,31 @@ export const Contact = () => {
     <Card>
       <Container>
         <div>
-          <input type="text" />
-          <input type="text" />
+          <Input width="50%">
+            <label htmlFor="">Name</label>
+            <input type="text" />
+          </Input>
+
+          <Input width="50%">
+            <label htmlFor="">Name</label>
+            <input type="text" />
+          </Input>
         </div>
 
-        <input type="email" />
+        <Input>
+          <label>Email</label>
+          <input type="email" />
+        </Input>
 
-        <input type="text" />
+        <Input>
+          <label htmlFor="">Subject</label>
+          <input type="text" />
+        </Input>
 
-        <textarea></textarea>
+        <Input>
+          <label htmlFor="">Message</label>
+          <textarea></textarea>
+        </Input>
 
         <button>Send message</button>
       </Container>
