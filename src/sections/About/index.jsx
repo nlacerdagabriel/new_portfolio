@@ -6,14 +6,18 @@ export const About = () => {
     <Card title={"About me"}>
       <Container>
         <p>
-          Hi I am a Front-End developer & I can build your website as you want.
-          I can customize plugin & wordpress theme. And I have two years of
-          experience in figma. Now I am able to design your portfolio.
+          Hello! I'm a Frontend Developer with about a year and a half of
+          experience in a company from Brazil. I've always been interested in
+          programming, which is why I've also been working on fullstack side
+          projects where I can explore different technologies and challenges.
         </p>
 
         <p>
-          I have three years of experience with HTML, CSS, JavaScript. And I can
-          Design Your web application.
+          In addition, I also work as a freelancer in my free time, which allows
+          me to have more flexibility and work on varied projects. I believe
+          that my passion for programming and my constant pursuit of technical
+          improvement make me a valuable professional capable of delivering
+          quality solutions to my clients and employers.
         </p>
       </Container>
     </Card>

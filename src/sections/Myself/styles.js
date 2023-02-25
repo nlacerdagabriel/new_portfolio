@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { theme } from "../../theme";
+import Eu from '../../assets/eu.jpg'
 
 export const Container = styled.section`
   width: 50%;
@@ -11,6 +12,12 @@ export const Container = styled.section`
     width: 180px;
 
     border: 5px solid ${theme.colors.text};
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-image: url(${Eu});
 
     margin-bottom: 2rem;
 
@@ -67,4 +74,8 @@ export const Container = styled.section`
       margin-right: 1rem;
     }
   }
+
+  @media(max-width: 992px){
+        width: 100%;
+    }
 `;

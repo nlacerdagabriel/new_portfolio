@@ -7,12 +7,12 @@ export const Contact = () => {
       <Container>
         <div>
           <Input width="50%">
-            <label htmlFor="">Name</label>
+            <label htmlFor="">Your name</label>
             <input type="text" />
           </Input>
 
           <Input width="50%">
-            <label htmlFor="">Name</label>
+            <label htmlFor="">Phone number</label>
             <input type="text" />
           </Input>
         </div>

@@ -19,4 +19,12 @@ export const Container = styled.section`
         margin-bottom: 0;
     }
 
+
+    @media(max-width: 992px){
+        width: 100%;
+        height: initial;
+        overflow: initial;
+
+        margin-left: 0;
+    }
 `

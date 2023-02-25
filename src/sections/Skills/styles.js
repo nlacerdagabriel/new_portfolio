@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Container = styled.section`
   display: flex;
   align-items: center;
-  justify-content: space-between;
 
   flex-wrap: wrap;
 
@@ -11,7 +10,7 @@ export const Container = styled.section`
     height: 4rem;
     width: 4rem;
 
-    margin-bottom: 0.5rem;
+    margin: 3px;
 
     display: flex;
 
@@ -21,6 +20,8 @@ export const Container = styled.section`
     svg{
         width: 80%;
         height: 80%;
+
+        
     }
   }
 `;

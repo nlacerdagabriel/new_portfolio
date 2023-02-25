@@ -13,6 +13,7 @@ export const Container = styled.form`
 
     box-shadow: ${theme.style.inner_shadow};
 
+
     &:focus {
       border: 2px solid ${theme.colors.primary};
     }
@@ -20,6 +21,9 @@ export const Container = styled.form`
 
   input {
     height: 3rem;
+
+    color: ${theme.colors.white};
+    padding-left: 1rem;
   }
 
   & > div {
@@ -45,6 +49,7 @@ export const Container = styled.form`
     width: 100%;
     background-image: linear-gradient(145deg, #1e2024, #23272b);
 
+    transition: 0.3s;
 
     text-transform: uppercase;
 
@@ -55,6 +60,14 @@ export const Container = styled.form`
     font-size: ${theme.size.fonts.body.s.size};
     color: ${theme.colors.white};
     font-weight: 500;
+
+    position: relative;
+
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
   }
 `;
 
@@ -64,16 +77,17 @@ export const Input = styled.div`
 
   width: ${(props) => (props.width ? props.width : "100%")};
 
-    margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 
   &:first-child {
-      margin-right: 2rem;
-    }
+    margin-right: 2rem;
+  }
 
-    & > label{
-      margin-bottom: 1rem;
-      width: 100%;
-    }
+  & > label {
+    margin-bottom: 1rem;
+    width: 100%;
+
+  }
 
   & > input {
     width: 100%;
