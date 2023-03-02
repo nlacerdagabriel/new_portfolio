@@ -1,5 +1,4 @@
 import { Card } from "../../components/Card"
-import { Carousel } from "../../components/Carousel"
 import { About } from "../About"
 import { Contact } from "../Contact"
 import { Projects } from "../Projects"

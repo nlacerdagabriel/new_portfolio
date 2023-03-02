@@ -47,4 +47,45 @@ export const GlobalStyle = createGlobalStyle`
     a{
         text-decoration: none;
     }
+
+    .carousel *{
+  text-align: left !important;
+}
+
+.carousel.carousel-slider{
+    position: inherit;
+}
+
+.carousel.carousel-slider .control-arrow{
+    background-color: ${theme.colors.secondary} !important;
+    bottom: inherit;
+    top: -5rem;
+
+    box-shadow: ${theme.style.box_shadow};
+    opacity: 1 !important;
+
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: ${theme.style.border_radius};
+}
+
+.carousel .control-prev.control-arrow{
+    right: 2rem;
+    left: inherit;
+
+}
+
+.control-dots{
+    display: none !important;
+}
+.carousel-status{
+    background-color: ${theme.colors.secondary};
+
+    padding: 0.5rem !important;
+}
+
 `;

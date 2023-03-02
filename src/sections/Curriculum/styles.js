@@ -15,10 +15,7 @@ export const Container = styled.section`
     margin-left: 3rem;
 
 
-    & > div:last-child{
-        margin-bottom: 0;
-    }
-
+    
 
     @media(max-width: 992px){
         width: 100%;
@@ -26,5 +23,7 @@ export const Container = styled.section`
         overflow: initial;
 
         margin-left: 0;
+
+        padding: 3rem 0;
     }
 `
