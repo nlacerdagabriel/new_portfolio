@@ -6,12 +6,16 @@ export const Project = ({ image, title, description, url, skills, code }) => {
     <Container>
       <img src={image} alt="" />
       <Links>
-        <a href={url} target="_blank">
-          See Project
-        </a>
-        <a href={code} target="_blank">
-          See Code
-        </a>
+        {url && (
+          <a href={url} target="_blank">
+            See Project
+          </a>
+        )}
+        {code && (
+          <a href={code} target="_blank">
+            See Code
+          </a>
+        )}
       </Links>
 
       <h2>{title}</h2>
