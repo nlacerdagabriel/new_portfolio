@@ -17,8 +17,18 @@ export const Myself = () => {
       </p>
 
       <div className="buttons">
-        <button>Linkedin</button>
-        <button>Hire me</button>
+        <a
+          href="https://www.linkedin.com/in/gabriel-lacerda-a46a48217/"
+          target="_blank"
+        >
+          Linkedin
+        </a>
+        <a
+          href="https://api.whatsapp.com/send?phone=5516988681880&text=Hello!%20I%20came%20from%20your%20portfolio%20and%20I%20want%20to%20hire%20you!"
+          target="_blank"
+        >
+          Hire me
+        </a>
       </div>
     </Container>
   );

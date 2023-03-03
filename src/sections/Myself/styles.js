@@ -53,7 +53,7 @@ export const Container = styled.section`
     display: flex;
     align-items: center;
 
-    button {
+    a {
       all: unset;
 
       padding: 1rem 2rem;
@@ -68,6 +68,12 @@ export const Container = styled.section`
       box-shadow: ${theme.style.box_shadow};
 
       border-radius: ${theme.style.border_radius};
+
+      transition: 300ms;
+
+      &:hover {
+      transform: translateY(-5px);
+    }
     }
 
     button:first-child {
