@@ -83,5 +83,6 @@ export const Container = styled.section`
 
   @media(max-width: 992px){
         width: 100%;
+        margin-top: 4rem;
     }
 `;

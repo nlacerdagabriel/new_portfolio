@@ -25,5 +25,7 @@ export const Container = styled.section`
         margin-left: 0;
 
         padding: 3rem 0;
+
+        max-height: inherit;
     }
 `
