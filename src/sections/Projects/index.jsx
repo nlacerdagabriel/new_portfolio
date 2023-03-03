@@ -33,7 +33,7 @@ export const Projects = () => {
               key={project.id}
               url={project.attributes.url && project.attributes.url}
               code={project.attributes.github && project.attributes.github}
-              image={`http://localhost:1337${project?.attributes?.thumb?.data?.attributes?.url}`}
+              image={`${project?.attributes?.thumb?.data?.attributes?.url}`}
               title={project.attributes.title}
               description={project.attributes.description}
               skills={project.attributes.skills}

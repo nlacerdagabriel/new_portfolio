@@ -34,6 +34,8 @@ export const Container = styled.div`
   color: ${theme.colors.white};
   padding: 1rem;
   font-size: 1rem;
+
+  resize: none;
     
   }
 
