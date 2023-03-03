@@ -21,7 +21,6 @@ export const Container = styled.section`
     font-size: ${theme.size.fonts.body.m.size};
     line-height: ${theme.size.fonts.body.m.line_height};
 
-    max-height: 170px;
     overflow: hidden;
 
     text-overflow: ellipsis;
