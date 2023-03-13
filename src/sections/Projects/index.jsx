@@ -6,23 +6,24 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel";
 import { useEffect, useState } from "react";
 import { api } from "../../api";
+import { projectsData } from "../../data/projects";
 
 export const Projects = () => {
-  const [projects, setProjects] = useState([]);
+  const [projects, setProjects] = useState(projectsData);
 
-  useEffect(() => {
-    const fetchProjects = async () => {
-      try {
-        const response = await api.get("/projects?populate=*");
-        const currentProjects = response.data.data;
-        setProjects(currentProjects);
-      } catch (error) {
-        console.error(error);
-      }
-    };
+  // useEffect(() => {
+  //   const fetchProjects = async () => {
+  //     try {
+  //       const response = await api.get("/projects?populate=*");
+  //       const currentProjects = response.data.data;
+  //       setProjects(currentProjects);
+  //     } catch (error) {
+  //       console.error(error);
+  //     }
+  //   };
 
-    fetchProjects();
-  }, []);
+  //   fetchProjects();
+  // }, []);
 
   return (
     <Card title="Projects">
@@ -31,14 +32,16 @@ export const Projects = () => {
           {projects.map((project, index) => (
             <Project
               key={project.id}
-              url={project.attributes.url && project.attributes.url}
-              code={project.attributes.github && project.attributes.github}
-              image={`${project?.attributes?.thumb?.data?.attributes?.url}`}
-              title={project.attributes.title}
-              description={project.attributes.description}
-              skills={project.attributes.skills}
+              url={project.url && project.url}
+              code={project.code && project.code}
+              image={`${project.image}`}
+              title={project.title}
+              description={project.description}
+              skills={project.skills}
             />
           ))}
+
+        
         </Carousel>
       </Container>
     </Card>

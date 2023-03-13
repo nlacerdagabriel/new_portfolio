@@ -18,6 +18,7 @@ export const Myself = () => {
 
       <div className="buttons">
         <a
+        style={{marginRight: '2rem'}}
           href="https://www.linkedin.com/in/gabriel-lacerda-a46a48217/"
           target="_blank"
         >

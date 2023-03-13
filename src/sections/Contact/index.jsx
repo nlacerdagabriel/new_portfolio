@@ -18,43 +18,43 @@ export const Contact = () => {
 
   const rules = {
     name: {
-      required: "Este campo é obrigatório.",
+      required: "This field is required",
       minLength: {
         value: 3,
-        message: "O campo deve conter no mínimo 3 caracteres.",
+        message: "This field must contain at least 3 characters.",
       },
       maxLength: {
         value: 30,
-        message: "O campo deve conter no máximo 30 caracteres.",
+        message: "This field must contain a maximum of 30 characters.",
       },
     },
     subject: {
-      required: "Este campo é obrigatório.",
+      required: "This field is required",
       minLength: {
         value: 3,
-        message: "O campo deve conter no mínimo 3 caracteres.",
+        message: "This field must contain at least 3 characters.",
       },
       maxLength: {
         value: 30,
-        message: "O campo deve conter no máximo 30 caracteres.",
+        message: "This field must contain a maximum of 30 characters.",
       },
     },
     message: {
-      required: "Este campo é obrigatório.",
+      required: "This field is required",
       minLength: {
         value: 3,
-        message: "O campo deve conter no mínimo 3 caracteres.",
+        message: "This field must contain at least 3 characters.",
       },
       maxLength: {
         value: 30,
-        message: "O campo deve conter no máximo 300 caracteres.",
+        message: "This field must contain a maximum of 300 characters.",
       },
     },
     email: {
-      required: "Este campo é obrigatório.",
+      required: "This field is required",
       pattern: {
         value: /^\S+@\S+\.\S+$/,
-        message: "Por favor, insira um e-mail válido.",
+        message: "Please enter a valid email address.",
       },
     },
   };
@@ -75,11 +75,11 @@ export const Contact = () => {
         "w5f6bppgJw_vJ6-gc"
       )
       .then(() => {
-        toast.success("E-mail enviado com sucesso!");
+        toast.success("Email successfully sent!");
         reset();
       })
       .catch(() => {
-        toast.error("Erro, tente novamente.");
+        toast.error("Error, try again.");
       });
   };
 
