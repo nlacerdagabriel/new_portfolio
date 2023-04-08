@@ -42,6 +42,14 @@ export const Container = styled.section`
       font-size: 3rem;
       line-height: ${theme.size.fonts.heading.xl.line_height};
     }
+
+    @media(max-width: 480px){
+      font-size: 2.7rem;
+
+      p{
+        font-size: 2.7rem;
+      }
+    }
   }
 
   & > p {

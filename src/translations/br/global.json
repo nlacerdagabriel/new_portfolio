@@ -2,7 +2,7 @@
   "main": {
     "title": "Eu sou <span>Gabriel Lacerda</span> <p>Desenvolvedor Frontend</p>",
     "description": "Sou um brasileiro de 20 anos com 2 anos de experiência em programação backend e frontend. Meu amor por tecnologia e capacidade de aprender e me adaptar rapidamente a novas tecnologias me tornam um profissional valioso em projetos de desenvolvimento de software.",
-    "hireMe": "Me contrate",
+    "hireMe": "Conversar",
     "wppMessage": "https://api.whatsapp.com/send?phone=5516988681880&text=Ol%C3%A1!%20Eu%20vim%20do%20seu%20portf%C3%B3lio%20e%20quero%20contrat%C3%A1-lo!"
   },
   "aboutMe": {
