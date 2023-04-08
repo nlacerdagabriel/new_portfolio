@@ -6,8 +6,12 @@ import { useForm, Controller } from "react-hook-form";
 
 import emailjs from "@emailjs/browser";
 import { Input } from "../../components/Input";
+import { useTranslation } from "react-i18next";
 
 export const Contact = () => {
+  const [t, i18n] = useTranslation("global");
+
+
   const {
     register,
     handleSubmit,
@@ -18,40 +22,40 @@ export const Contact = () => {
 
   const rules = {
     name: {
-      required: "This field is required",
+      required: t("contactMe.rules.isRequired"),
       minLength: {
         value: 3,
-        message: "This field must contain at least 3 characters.",
+        message: t("contactMe.rules.minLength"),
       },
       maxLength: {
         value: 30,
-        message: "This field must contain a maximum of 30 characters.",
+        message: t("contactMe.rules.maxLength.30"),
       },
     },
     subject: {
-      required: "This field is required",
+      required: t("contactMe.rules.isRequired"),
       minLength: {
         value: 3,
-        message: "This field must contain at least 3 characters.",
+        message: t("contactMe.rules.minLength"),
       },
       maxLength: {
         value: 30,
-        message: "This field must contain a maximum of 30 characters.",
+        message: t("contactMe.rules.maxLength.30"),
       },
     },
     message: {
-      required: "This field is required",
+      required: t("contactMe.rules.isRequired"),
       minLength: {
         value: 3,
-        message: "This field must contain at least 3 characters.",
+        message: t("contactMe.rules.minLength"),
       },
       maxLength: {
-        value: 30,
-        message: "This field must contain a maximum of 300 characters.",
+        value: 300,
+        message: t("contactMe.rules.maxLength.300"),
       },
     },
     email: {
-      required: "This field is required",
+      required: t("contactMe.rules.isRequired"),
       pattern: {
         value: /^\S+@\S+\.\S+$/,
         message: "Please enter a valid email address.",
@@ -75,11 +79,11 @@ export const Contact = () => {
         "w5f6bppgJw_vJ6-gc"
       )
       .then(() => {
-        toast.success("Email successfully sent!");
+        toast.success(t("toastMessages.email.success"));
         reset();
       })
       .catch(() => {
-        toast.error("Error, try again.");
+        toast.error(t("toastMessages.email.error"));
       });
   };
 
@@ -87,10 +91,10 @@ export const Contact = () => {
     <>
       <ToastContainer />
 
-      <Card title="Contact with me">
+      <Card title={t("contactMe.title")}>
         <Container onSubmit={handleSubmit(sendEmail)}>
           <Input
-            label="Name"
+            label={t("contactMe.inputs.name")}
             name="name"
             register={register}
             rules={rules.name}
@@ -98,7 +102,7 @@ export const Contact = () => {
             {errors.name && <span>{errors.name.message}</span>}
           </Input>
           <Input
-            label="Email"
+            label={t("contactMe.inputs.email")}
             name="email"
             register={register}
             rules={rules.email}
@@ -106,7 +110,7 @@ export const Contact = () => {
             {errors.email && <span>{errors.email.message}</span>}
           </Input>
           <Input
-            label="Subject"
+            label={t("contactMe.inputs.subject")}
             name="subject"
             register={register}
             rules={rules.subject}
@@ -115,7 +119,7 @@ export const Contact = () => {
           </Input>
           <Input
             isTextarea
-            label="Message"
+            label={t("contactMe.inputs.message")}
             name="message"
             register={register}
             rules={rules.message}
@@ -123,7 +127,7 @@ export const Contact = () => {
             {errors.message && <span>{errors.message.message}</span>}
           </Input>
 
-          <button type="submit">Send message</button>
+          <button type="submit">{t("contactMe.button")}</button>
         </Container>
       </Card>
     </>

@@ -1,19 +1,24 @@
 import { useEffect } from "react";
 import { Container, Links, Skills } from "./styles";
+import { useTranslation } from "react-i18next";
 
 export const Project = ({ image, title, description, url, skills, code }) => {
+
+  const [t, i18n] = useTranslation("global");
+
+
   return (
     <Container>
       <img src={image} alt="" />
       <Links>
         {url && (
           <a href={url} target="_blank">
-            See Project
+            {t("myProjects.seeProject")}
           </a>
         )}
         {code && (
           <a href={code} target="_blank">
-            See Code
+            {t("myProjects.seeCode")}
           </a>
         )}
       </Links>

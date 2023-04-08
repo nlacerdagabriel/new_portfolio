@@ -1,0 +1,110 @@
+{
+  "main": {
+    "title": "Eu sou <span>Gabriel Lacerda</span> <p>Desenvolvedor Frontend</p>",
+    "description": "Sou um brasileiro de 20 anos com 2 anos de experiência em programação backend e frontend. Meu amor por tecnologia e capacidade de aprender e me adaptar rapidamente a novas tecnologias me tornam um profissional valioso em projetos de desenvolvimento de software.",
+    "hireMe": "Me contrate"
+  },
+  "aboutMe": {
+    "title": "Sobre mim",
+    "descriptionOne": "Olá! Sou Desenvolvedor Frontend com cerca de um ano e meio de experiência em uma empresa do Brasil. Sempre me interessei por programação, por isso também tenho trabalhado em projetos fullstack onde posso explorar diferentes tecnologias e desafios.",
+    "descriptionTwo": "Além disso, também trabalho como freelancer nas horas vagas, o que me permite ter mais flexibilidade e trabalhar em projetos variados. Acredito que minha paixão por programação e minha busca constante pelo aprimoramento técnico me tornam um profissional valioso, capaz de entregar soluções de qualidade para meus clientes e empregadores."
+  },
+  "mySkills": {
+    "title": "Minhas habilidades"
+  },
+  "myServices": {
+    "title": "Meus serviços",
+    "services": [
+      "Desenvolvimento Mobile",
+      "Desenvolvimento Web",
+      "Desenvolvimento Backend",
+      "Desenvolvimento Frontend"
+    ]
+  },
+  "myProjects": {
+    "title": "Meus projetos",
+    "seeProject": "Ver Projeto",
+    "seeCode": "Ver Código",
+    "projects": [
+      {
+        "id": 1,
+        "key": 1,
+        "url": "https://skilled-landingpage.vercel.app/",
+        "code": "https://github.com/nlacerdagabriel/skilled-landingpage",
+        "image": "https://res.cloudinary.com/daksdsas/image/upload/v1677817877/medium_Screenshot_2_1691763ab3.png",
+        "title": "Landing Page e-learning",
+        "description": "Landing page criada para demonstrar meu conhecimento em React, Styled Components, responsividade e fidelidade de design. Esta página de destino foi um desafio de frontend de https://www.frontendmentor.io/.",
+        "skills": ["ReactJS", "Styled Components"]
+      },
+
+      {
+        "id": 2,
+        "key": 2,
+        "url": "https://quiz-game-orcin.vercel.app/",
+        "code": "https://github.com/nlacerdagabriel/quiz_game",
+        "image": "https://res.cloudinary.com/daksdsas/image/upload/v1677817870/small_Screenshot_5_77f4a7026b.png",
+        "title": "App de Quiz",
+        "description": "Quiz criado para praticar e demonstrar minhas habilidades com consumo externo de API e typescript.",
+        "skills": [
+          "ReactJS",
+          "RestAPI",
+          "Typescript",
+          "Styled Components",
+          "Axios"
+        ]
+      },
+      {
+        "id": 3,
+        "key": 3,
+        "code": "https://github.com/nlacerdagabriel/financial_dashboard",
+        "image": "https://res.cloudinary.com/daksdsas/image/upload/v1677817871/Screenshot_25_c85a69e48e.png",
+        "title": "Dashboard Financeiro",
+        "description": "Criado para provar meu conhecimento fullstack. Consiste em um painel para gerenciar e monitorar as finanças pessoais, podendo filtrar por ano e mês.",
+        "skills": [
+          "ReactJS",
+          "AdonisJS",
+          "PostgreSQL",
+          "Typescript",
+          "Styled Components",
+          "React Router",
+          "Axios"
+        ]
+      },
+      {
+        "id": 4,
+        "key": 4,
+        "url": "https://new-portfolio-five-sandy.vercel.app/",
+        "code": "https://github.com/nlacerdagabriel/new_portfolio",
+        "image": "https://res.cloudinary.com/daksdsas/image/upload/v1677817870/medium_Screenshot_4_8e03194154.png",
+        "title": "Portfólio",
+        "description": "Criado para contar um pouco sobre mim e mostrar todos os projetos que já desenvolvi.",
+        "skills": ["ReactJS", "Styled Components"]
+      }
+    ]
+  },
+  "contactMe": {
+    "title": "Entre em contato",
+    "inputs": {
+      "name": "Nome",
+      "subject": "Assunto",
+      "email": "Email",
+      "message": "Mensagem"
+    },
+    "button": "Enviar mensagem",
+    "rules": {
+      "isRequired": "Esse campo é obrigatório",
+      "minLength": "Esse campo deve conter no mínimo 3 caracteres",
+      "maxLength": {
+        "3": "Esse campo deve conter até 30 caracteres",
+        "300": "Esse campo deve conter até 300 caracteres"
+      },
+      "email": "Por favor, insira um e-mail válido"
+    }
+  },
+  "toastMessages": {
+    "email": {
+      "success": "Email enviado com sucesso!",
+      "error": "Erro, tente novamente."
+    }
+  }
+}

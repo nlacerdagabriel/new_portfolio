@@ -13,11 +13,14 @@ import {
   SiReact,
   SiAdonisjs
 } from "react-icons/si";
-import { GrNode } from "react-icons/gr";
+import { useTranslation } from "react-i18next";
 
 export const Skills = () => {
+  const [t, i18n] = useTranslation("global");
+
+
   return (
-    <Card title={"My Skills"}>
+    <Card title={t("mySkills.title")}>
       <Container>
         <Card mb={"0"} padding={"1rem"}>
           <SiGit color="#E84D31" />

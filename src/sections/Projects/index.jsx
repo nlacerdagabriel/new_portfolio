@@ -4,32 +4,21 @@ import { Project } from "../../components/Project";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-import { useEffect, useState } from "react";
-import { api } from "../../api";
-import { projectsData } from "../../data/projects";
+import { useTranslation } from "react-i18next";
+
 
 export const Projects = () => {
-  const [projects, setProjects] = useState(projectsData);
-
-  // useEffect(() => {
-  //   const fetchProjects = async () => {
-  //     try {
-  //       const response = await api.get("/projects?populate=*");
-  //       const currentProjects = response.data.data;
-  //       setProjects(currentProjects);
-  //     } catch (error) {
-  //       console.error(error);
-  //     }
-  //   };
-
-  //   fetchProjects();
-  // }, []);
+  const [t, i18n] = useTranslation("global");
+  const projects = t("myProjects.projects", { returnObjects: true });
 
   return (
-    <Card title="Projects">
+    <Card title={t("myProjects.title")}>
+
       <Container>
         <Carousel showThumbs={false}>
-          {projects.map((project, index) => (
+
+
+          {projects.map((project) => (
             <Project
               key={project.id}
               url={project.url && project.url}
@@ -41,7 +30,6 @@ export const Projects = () => {
             />
           ))}
 
-        
         </Carousel>
       </Container>
     </Card>

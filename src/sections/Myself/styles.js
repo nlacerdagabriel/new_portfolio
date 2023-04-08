@@ -6,6 +6,8 @@ export const Container = styled.section`
   width: 50%;
   margin-top: 7rem;
 
+  position: relative;
+
 
   .image {
     height: 180px;
@@ -37,7 +39,7 @@ export const Container = styled.section`
     }
 
     p {
-      font-size: 3.2rem;
+      font-size: 3rem;
       line-height: ${theme.size.fonts.heading.xl.line_height};
     }
   }
@@ -86,3 +88,29 @@ export const Container = styled.section`
         margin-top: 4rem;
     }
 `;
+
+
+export const Languages = styled.div`
+  position: absolute;
+  top: 2rem;
+  right: 0;
+
+
+  button{
+    all: unset;
+    padding: 0.5rem;
+    background-color: ${theme.colors.dark};
+    border-radius: ${theme.style.border_radius};
+    box-shadow: ${theme.style.box_shadow};
+    cursor: pointer;
+
+    font-weight: bold;
+
+    font-size: 0.9rem;
+
+    &:first-child{
+      margin-right: 1rem;
+    }
+
+  }
+`
