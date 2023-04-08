@@ -92,7 +92,7 @@ export const Container = styled.section`
 
 export const Languages = styled.div`
   position: absolute;
-  top: 2rem;
+  top: 0;
   right: 0;
 
 
