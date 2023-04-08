@@ -58,7 +58,7 @@ export const Contact = () => {
       required: t("contactMe.rules.isRequired"),
       pattern: {
         value: /^\S+@\S+\.\S+$/,
-        message: "Please enter a valid email address.",
+        message:t("contactMe.rules.email"),
       },
     },
   };
