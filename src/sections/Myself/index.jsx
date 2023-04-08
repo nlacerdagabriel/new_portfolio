@@ -33,7 +33,7 @@ export const Myself = () => {
           Linkedin
         </a>
         <a
-          href="https://api.whatsapp.com/send?phone=5516988681880&text=Hello!%20I%20came%20from%20your%20portfolio%20and%20I%20want%20to%20hire%20you!"
+          href={t("main.wppMessage")}
           target="_blank"
         >
          {t("main.hireMe")}

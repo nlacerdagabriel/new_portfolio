@@ -2,7 +2,9 @@
   "main": {
     "title": "I'm <span>Gabriel Lacerda</span> <p>Frontend Developer</p>",
     "description": "I'm a 20-year-old Brazilian with 2 years of experience in both backend and frontend programming. My love for technology and ability to learn and adapt quickly to new technologies make me a valuable professional in software development projects.",
-    "hireMe": "Hire me"
+    "hireMe": "Hire me",
+    "wppMessage": "https://api.whatsapp.com/send?phone=5516988681880&text=Hello!%20I%20came%20from%20your%20portfolio%20and%20I%20want%20to%20hire%20you!"
+
   },
   "aboutMe": {
     "title": "About me",
